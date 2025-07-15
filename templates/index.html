@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Resume Analyzer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #042c4b;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .upload-section {
+      padding: 5rem 1rem;
+      text-align: center;
+    }
+
+    .upload-box {
+      background-color: #0a3d62;
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      color: #fff;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .upload-box h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .upload-box p {
+      font-size: 1rem;
+      color: #c8d6e5;
+    }
+
+    .btn-check-score {
+      background-color: #1dd1a1;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 1.5rem;
+    }
+
+    .btn-check-score:hover {
+      background-color: #10ac84;
+    }
+
+    .file-note {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      color: #ced6e0;
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #a4b0be;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="upload-section">
+    <div class="upload-box">
+      <h1>Free Smart Resume Analyzer</h1>
+      <p>Upload your resume and get instant job role prediction based on skills and experience.</p>
+
+      <form action="/predict" method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+          <input type="file" name="resume" accept=".pdf" class="form-control" required />
+        </div>
+        <button class="btn btn-check-score" type="submit">Predict Job Role</button>
+      </form>
+
+      <div class="file-note">
+        We support: PDF (Max size: 5MB)
+      </div>
+
+      <div class="footer-note">
+        30% better job targeting · Instant AI prediction · Privacy Guaranteed
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

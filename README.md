@@ -35,6 +35,5 @@ resume_analyzer/
 │ └── result.html
 ├── static/
 │ └── uploads/ # Uploaded resumes
-├── utils/ # Resume parsing functions
 ├── requirements.txt # Project dependencies
 └── README.md # Project documentation
